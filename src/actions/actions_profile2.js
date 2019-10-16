@@ -3,7 +3,7 @@ export const PROFILE2_EDITED = 'PROFILE2_EDITED';
 
 export function fetchProfile2() {
   return (dispatch) => {
-    let header = new Headers({"Content-Type":"application/json", "Authorization":"54476984d2d34883fba737529e8b6df6ec440b76"});
+    let header = new Headers({"Content-Type":"application/json", "Authorization":"token 54476984d2d34883fba737529e8b6df6ec440b76"});
     return fetch('https://api.github.com/users/JohnSmith-megabit', {
       method: 'GET',
       headers: header
